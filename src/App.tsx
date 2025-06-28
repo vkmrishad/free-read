@@ -36,7 +36,7 @@ function HomePage({
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="text-center mb-12">
         <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-600 bg-clip-text text-transparent">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Read Medium Articles Free</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Read Medium Articles For Free</h1>
         </div>
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
           Access any Medium article instantly without paywalls or limitations. Just paste the URL and start reading.
