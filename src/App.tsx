@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router, // Changed from BrowserRouter to HashRouter for GitHub Pages support
   Routes,
   Route,
   useNavigate,
@@ -63,7 +63,8 @@ function HomePage({
 }
 
 function ArticleUrlPage({ articles }: { articles: Article[] }) {
-  const url = window.location.pathname.slice(1); // Get raw URL directly
+  const hashPath = window.location.hash.slice(2); // Removes "#/" to get the full URL
+  const url = decodeURIComponent(hashPath); // Decode in case it's URL encoded
   const navigate = useNavigate();
   const [article, setArticle] = useState<Article | null>(null);
   const [loading, setLoading] = useState(true);

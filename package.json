@@ -2,10 +2,11 @@
   "name": "medium-reader",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://www.freeread.online",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && echo www.freeread.online > dist/CNAME",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
